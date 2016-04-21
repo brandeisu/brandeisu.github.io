@@ -687,3 +687,15 @@ footer.footer-canopy{
 .contacts li{
     margin-bottom: 10px;
 }
+
+.waiting-screen {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 1000;
+    color: white;
+    font-size: 100px;
+    padding-top: Calc(50vh - 50px);
+}
