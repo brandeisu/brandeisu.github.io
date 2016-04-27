@@ -9,7 +9,7 @@
     
     var pathToPage = window.location.pathname;
     
-    if (pathToPage.contains("index.html"){
+    if (pathToPage.contains("index.html")){
     	pathToPage = pathToPage.replace("index.html","");
     }
     
