@@ -21,7 +21,7 @@
     	pathToPage = pathToPage.substring(0, pathToPage.length - 1);
     }
     
-    if (pathToPage.length > 0 && pathToPage[0] == '/'){
+    while (pathToPage.length > 0 && pathToPage[0] == '/'){
     	pathToPage = pathToPage.substring(1);
     }
     
