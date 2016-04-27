@@ -9,11 +9,11 @@
     
     var pathToPage = window.location.pathname;
     
-    if (pathToPage.contains("index.html")){
+    if (pathToPage.indexOf("index.html") > -1){
     	pathToPage = pathToPage.replace("index.html","");
     }
     
-    if (pathToPage.contains("website")){
+    if (pathToPage.indexOf("website") > -1){
     	pathToPage = pathToPage.replace("website", "");
     }
     
