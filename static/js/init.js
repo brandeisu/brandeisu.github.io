@@ -5,16 +5,12 @@
     
     $(".dropdown-button").dropdown();
     
-    var editorURL = "http://brandeis-student-union.appspot.com/edit";
+    var editorURL = "http://admin.brandeis.io/edit";
     
     var pathToPage = window.location.pathname;
     
     if (pathToPage.indexOf("index.html") > -1){
     	pathToPage = pathToPage.replace("index.html","");
-    }
-    
-    if (pathToPage.indexOf("website") > -1){
-    	pathToPage = pathToPage.replace("website", "");
     }
     
     if (pathToPage.length > 0 && pathToPage[pathToPage.length - 1] == '/'){
