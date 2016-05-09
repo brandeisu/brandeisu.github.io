@@ -22,6 +22,14 @@
 
 
 
+
+
+
+
+
+
+
+
 <html lang="en">
     <head id="head">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -33,7 +41,7 @@
 		
     </head>
     <body id="body" class="bg-brandeis-grey" data-name="menu">
-		<ul id="about-dropdown" class="no-bullet-list dropdown-content txt-brandeis-blue-0">
+		<ul class="no-bullet-list dropdown-content txt-brandeis-blue-0" id="about-dropdown" >
 			<li><a href="http://union.brandeis.io/e-board">Executive Board</a></li>
 			<li><a href="http://union.brandeis.io/senate">The Senate</a></li>
 			<li><a href="http://union.brandeis.io/a-board">Allocations Board</a></li>
@@ -45,7 +53,7 @@
 			<li><a href="http://union.brandeis.io/documents">Constitution</a></li>
 			<li><a href="http://union.brandeis.io/documents">Bylaws</a></li>
 		</ul>
-		<ul id="nav-mobile" class="no-bullet-list side-nav">
+		<ul class="no-bullet-list side-nav" id="nav-mobile">
 			<li class="bg-brandeis-blue-0">
 				<a class="menu-header" href="http://union.brandeis.io/">
 					<img class="menu-seal" src="/static/img/edited-seal.png"/>
@@ -75,6 +83,8 @@
 			<li><a href="http://union.brandeis.io/documents">Bylaws</a></li>
 			<li class="divider"></li>
 			
+			
+			
 		</ul>
 		<nav class="bg-brandeis-blue-0 canopy" role="navigation">
 			<div class="menu-ribbon"></div>
@@ -94,6 +104,7 @@
 					<li><a href="http://admin.brandeis.io/petitions">Petitions</a></li>
 					<li><a href="http://union.brandeis.io/elections">Elections</a></li>
 					
+					
 				</ul>
 				<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 			</div>
@@ -110,10 +121,10 @@
 </h1>
 <img alt="An Image" class="align-right" data-ce-max-width="320" height="175" src="https://raw.githubusercontent.com/subrandeis/subrandeis.github.com/master/static/img/c2023332-caee-49ad-9169-bd7fda8a5b4f.png
 " width="217">
-<h2 class="text-right">
+<h2 class="text-right light txt-smaller-plz">
     <i>This site looks simple, but under the covers there are dozens of intricate components.</i>
 </h2>
-<p class="text-center">
+<p class="text-left">
     My name is <b>Grady Ward</b>, I am from the class of 2016, and before my junior year, I wrote the HTML and CSS which defined this site.
 </p>
 <p>
@@ -130,36 +141,17 @@
 </p>
 <ol>
     <li>
-        The site uses Github Pages to support most of the pages on the site (everything except petitions).
-        <ol>
-            <li>
-                <a href="http://union.brandeis.io" target="">http://union.brandeis.io</a> is served from Github, at the Github repository <a href="subrandeis.github.io" target="">subrandeis.github.io</a>
-            </li>
-            <li>
-                This enables the site to be version controlled, simply go to Github to see the site in all of its versions.
-            </li>
-            <li>
-                When a change is made (via an awesome and intuitive editing interface) the changes are saved to Github as a commit via the OAuth procedures described in the Github API documentation.
-            </li>
-        </ol>
+        The site uses Github Pages to support and store most of the pages on the site (everything except petitions). <ol><li><a href="http://union.brandeis.io" target="">http://union.brandeis.io</a> is served from Github, at the Github repository <a href="subrandeis.github.io" target="">subrandeis.github.io</a></li> <li>This enables the site to be version controlled, simply go to Github to see the site in all of its versions.</li> <li>When a change is made (via an awesome and intuitive editing interface) the changes are saved to Github as a commit via the OAuth procedures described in the Github API documentation.</li></ol>
     </li>
     <li>
-        The site uses Google App Engine as a mechanism to do basic storage (Stories for News, Profile information, Petition Results), in addition to providing the authentication framework (via Google Email addresses) and of course, the server which spins to keep the site updated.
-        <ol>
-            <li>
-                The App URL is <a href="http://admin.brandeis.io" target="">http://admin.brandeis.io</a>, and that is where you can login (if you have been given permissions) and edit any page on the Student Union Site
-            </li>
-            <li>
-                The Login authentication provided by GAE makes petitioning really easy.
-            </li>
-        </ol>
+        The site uses Google App Engine as a mechanism to do basic storage (Stories for News, Profile information, Petition Results), in addition to providing the authentication framework (via Google Email addresses) and of course, the server which spins to keep the site updated when someone wants to edit it.<ol><li>The App URL is <a href="http://admin.brandeis.io" target="">http://admin.brandeis.io</a>, and that is where you can login (if you have been given permissions) and edit any page on the Student Union Site</li> <li>The Login authentication provided by GAE makes petitioning really easy.</li></ol>
     </li>
 </ol>
 <p class="text-left">
     There is so much going on in this project, so many neat little tricks, that I can't do it justice in a single page.
 </p>
 <p class="text-left">
-    Heck, it supports image uploads. &nbsp;Have you ever built an image uploader from scratch!?! It is such a blast!
+    Heck, it supports image uploads. &nbsp;Have you ever built an image uploader from scratch? What a rush!
 </p>
 <p>
     I really enjoyed building this, and I am certain that it will be in use for a long time.
@@ -203,7 +195,7 @@
 			
 				<div class="footer-copyright bg-brandeis-blue-2 txt-brandeis-white">
 					<div id="last-edited" class="container">
-						This page was last edited on <span id="last-editor-date">Monday, May 02, 2016 at 07:57 PM</span>, by <span id="last-editor-nickname">Grady Ward</span> (<a class="blue-text text-lighten-3" href="mailto:grady.b.ward@gmail.com" id="last-editor-email">grady.b.ward@gmail.com</a>).
+						This page was last edited on <span id="last-editor-date">Monday, May 09, 2016 at 05:31 PM</span>, by <span id="last-editor-nickname">Grady Ward</span> (<a class="blue-text text-lighten-3" href="mailto:grady.b.ward@gmail.com" id="last-editor-email">grady.b.ward@gmail.com</a>).
 						<a class="orange-text text-lighten-3" href="#" id="edit-now-link">Edit Now</a>.      
 					</div>
 				</div>
@@ -227,4 +219,5 @@
 		
     </body>
 </html>
+
 
